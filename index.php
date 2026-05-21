@@ -88,13 +88,13 @@ if ($_POST) {
                 
                 <h2>Power BI Project</h2>
 
-<a href="/projects/pwc-dashboard.pdf" target="_blank">
+<a href="/projects/powerbi dashboard.pdf" target="_blank">
    View Dashboard
 </a>
 
 <br><br>
 
-<a href="/projects/pwc-dashboard.pbix" download>
+<a href="/projects/PowerBi Project.pbix" download>
    Download PBIX File
 </a>
             </div>
