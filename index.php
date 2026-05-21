@@ -85,6 +85,18 @@ if ($_POST) {
                     </div>
                     <button type="submit" class="btn btn-primary w-100 py-3">Submit Form</button>
                 </form>
+                
+                <h2>Power BI Project</h2>
+
+<a href="/projects/pwc-dashboard.pdf" target="_blank">
+   View Dashboard
+</a>
+
+<br><br>
+
+<a href="/projects/pwc-dashboard.pbix" download>
+   Download PBIX File
+</a>
             </div>
         </div>
     </div>
