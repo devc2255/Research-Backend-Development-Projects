@@ -62,14 +62,14 @@ if ($_POST) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>PHP API Contact Form</title>
+    <title>PHP RESEND API Contact Form</title>
 </head>
 <body class="bg-light">
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card shadow-lg w-100" style="max-width: 500px;">
             <div class="card-body p-5">
                 
-                <h2>PHP RESEND API Project</h2>
+                <h2>PHP Project</h2>
                 <a href="https://contact-form-1f9j.onrender.com" target="_blank">
                 View PHP Project
                 </a>
