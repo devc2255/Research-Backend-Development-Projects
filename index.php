@@ -42,7 +42,7 @@
             <a href="/contact.php"
                target="_blank"
                class="btn btn-dark">
-               View PHP Project
+               View PHP Contact Form API Project
             </a>
 
             <!-- POWER BI PROJECT -->
