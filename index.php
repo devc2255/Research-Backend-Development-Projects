@@ -68,13 +68,6 @@ if ($_POST) {
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card shadow-lg w-100" style="max-width: 500px;">
             <div class="card-body p-5">
-                
-                <h2>PHP Project</h2>
-                <a href="https://contact-form-1f9j.onrender.com" target="_blank">
-                View PHP Project
-                </a>
-
-<br><br>
                 <h2 class="text-center mb-4">Contact Form</h2>
                 <?php echo $error; echo $successMessage; ?>
                 <form method="post">
