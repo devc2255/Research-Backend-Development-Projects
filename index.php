@@ -86,7 +86,7 @@ if ($_POST) {
                     <button type="submit" class="btn btn-primary w-100 py-3">Submit Form</button>
                 </form>
                 
-                <h2>Power BI Project</h2>
+                <h2 style="margin-top: 40px;">Power BI Project</h2>
 
 <a href="/projects/powerbi dashboard.pdf" target="_blank">
    View Dashboard
