@@ -48,13 +48,13 @@
             <!-- POWER BI PROJECT -->
             <h2>Power BI Project</h2>
 
-            <a href="/projects/pwc-dashboard.pdf"
+            <a href="/projects/powerbi dashboard.pdf"
                target="_blank"
                class="btn btn-primary me-2">
                View Dashboard
             </a>
 
-            <a href="/projects/pwc-dashboard.pbix"
+            <a href="/projects/PowerBi Project.pbix"
                download
                class="btn btn-success">
                Download PBIX
