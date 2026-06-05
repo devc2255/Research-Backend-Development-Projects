@@ -51,6 +51,10 @@ docker run -p 8080:80 research-backend-project
 
 Open http://localhost:8080/index.php when running in Docker.
 
+## Live Demo
+[![Live Deployment](https://img.shields.io/badge/Status-Live_on_Render-success)](https://intel-flow-tech.onrender.com)
+
+
 ## Requirements
 
 - PHP 8.2 or later
