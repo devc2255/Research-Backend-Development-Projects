@@ -1,5 +1,16 @@
 <?php
-// 1. Error Reporting (Keep this on for testing, off for production)
+// 1. CORS Headers: Allow background requests from your portfolio
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+// Handle preflight OPTIONS request for AJAX
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
+
+// 2. Error Reporting (Keep this on for testing, off for production)
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -8,19 +19,15 @@ $successMessage = "";
 
 if ($_POST) {
     // Basic Validation
-    if (!$_POST["email"] || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+    if (!isset($_POST["email"]) || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
         $error .= "<li>Valid email is required</li>";
     }
-    if (!$_POST["Subject"]) { $error .= "<li>Subject is required</li>"; }
-    if (!$_POST["textarea"]) { $error .= "<li>Message is required</li>"; }
+    if (!isset($_POST["Subject"]) || empty($_POST["Subject"])) { $error .= "<li>Subject is required</li>"; }
+    if (!isset($_POST["textarea"]) || empty($_POST["textarea"])) { $error .= "<li>Message is required</li>"; }
 
     if ($error == "") {
-        // 2. Prepare Data for the API
-        // We use your Railway Environment Variable for the API Key
-         
+        // 3. Prepare Data for the API
         $apiKey = getenv('RESEND_API_KEY');
-// TEMPORARY DEBUG LINE: 
-// echo "Key length is: " . strlen($apiKey);
         
         $data = [
             "from" => "onboarding@resend.dev", // Resend requires this for free accounts
@@ -29,7 +36,7 @@ if ($_POST) {
             "html" => "<strong>From:</strong> " . htmlspecialchars($_POST['email']) . "<br><p>" . nl2br(htmlspecialchars($_POST['textarea'])) . "</p>"
         ];
 
-        // 3. The PHP cURL Request (The "Pro" way to send data)
+        // 4. The PHP cURL Request
         $ch = curl_init('https://api.resend.com/emails');
         curl_setopt_array($ch, [
             CURLOPT_POST => true,
