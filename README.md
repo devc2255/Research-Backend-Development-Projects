@@ -70,4 +70,4 @@ Open http://localhost:8080/index.php when running in Docker.
 
 ## License
 
-This repository includes a MIT license
+This project is licensed under the MIT License. See the LICENSE file for more details.
