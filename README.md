@@ -2,6 +2,9 @@
 
 A small collection of backend experiment assets and a simple PHP contact form demo.
 
+## Live Demo
+[![Live Deployment](https://img.shields.io/badge/Status-Live_on_Render-success)](https://intel-flow-tech-ea30.onrender.com)
+
 ## Repository Contents
 
 - `index.php` — Landing page that links to the contact form and Power BI assets.
@@ -50,10 +53,6 @@ docker run -p 8080:80 research-backend-project
 ```
 
 Open http://localhost:8080/index.php when running in Docker.
-
-## Live Demo
-[![Live Deployment](https://img.shields.io/badge/Status-Live_on_Render-success)](https://intel-flow-tech.onrender.com)
-
 
 ## Requirements
 
